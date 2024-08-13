@@ -1,0 +1,88 @@
+.homepage {
+    margin-top: 70px;
+}
+
+.homedivs {
+    width: 100%;
+    height: fit-content;
+}
+
+.frontimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.whoweare {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.whoweare-leftpart {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 500px;
+}
+
+.whoweare-leftpart p {
+    text-align: left;
+    color: var(--text2-color);
+}
+.whoweare-leftpart h1 {
+    text-align: left;
+}
+.homegrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    overflow: hidden;
+}
+
+.browseartworks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 100px 0;
+}
+
+.browseartworks p {
+    width: 50%;
+    color: var(--text2-color);
+    text-align: center;
+}
+
+.whatwedo {
+    margin: 200px 0;
+}
+
+.secy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 200px; */
+    margin-bottom: 50px;
+}
+
+.Webbtn {
+    width: fit-content;
+    background-color: var(--alt-color);
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.Webbtn:hover {
+    color: var(--background-color);
+    background-color: var(--text2-color);
+}

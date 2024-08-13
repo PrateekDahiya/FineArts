@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Jersey+10&display=swap");
+
+* {
+    font-family: "Anek Devanagari", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: "Anek Devanagari", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--alt-color);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--text2-color);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--text-color);
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}

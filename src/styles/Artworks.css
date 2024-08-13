@@ -1,0 +1,11 @@
+.artworks-page {
+    padding-top: 100px;
+}
+
+.artworks-outerdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: fit-content;
+}

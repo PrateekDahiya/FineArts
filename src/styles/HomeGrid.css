@@ -1,0 +1,50 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2px;
+    justify-items: center;
+    align-items: center;
+    transform: rotate(-45deg); /* Rotate the entire grid */
+}
+
+.grid-item {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--text-color);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.grid-item:hover {
+    transform: scale(1.2);
+    box-shadow: 3px 3px 3px 0px var(--alt-color);
+    z-index: 1;
+}
+
+.topimg {
+    top: 28px;
+    left: -28px;
+}
+
+.botimg {
+    top: -28px;
+    left: 28px;
+}
+
+.bigimg {
+    width: 180px;
+    height: 180px;
+}
+
+.grid-item img {
+    width: 140%;
+    height: 140%;
+    object-fit: cover;
+    transform: rotate(45deg);
+}

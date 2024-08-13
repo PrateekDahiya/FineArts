@@ -1,0 +1,11 @@
+.carousel-item img {
+    width: 80%;
+    height: 550px;
+    margin: 10px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    border-radius: 10px;
+}
