@@ -199,6 +199,7 @@
     .filters {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 5vh;
     }
     .filters input {
         width: 60%;
@@ -213,6 +214,9 @@
 @media (max-width: 606px) {
     .gallery {
         grid-template-columns: repeat(2, minmax(20vw, 1fr));
+    }
+    .filters {
+        margin-bottom: 1vh;
     }
     .filters input {
         width: 80%;
@@ -229,6 +233,9 @@
 @media (max-width: 400px) {
     .gallery {
         grid-template-columns: repeat(1, minmax(20vw, 1fr));
+    }
+    .filters {
+        margin-bottom: 0;
     }
     .filters input {
         width: 100%;
