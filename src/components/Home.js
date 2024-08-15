@@ -5,6 +5,7 @@ import ImageSlider from "./HomeSlider";
 import "../styles/Home.css";
 import HomeGrid from "./HomeGrid";
 import Glimpses2 from "./Glimpses2";
+
 import Infocards from "./Infocards";
 
 const Home = () => {
@@ -16,7 +17,6 @@ const Home = () => {
             <div className="homedivs frontimg">
                 <ImageSlider />
             </div>
-
             <div className="homedivs whoweare">
                 <div className="whoweare-leftpart">
                     <h1>Who Are We?</h1>

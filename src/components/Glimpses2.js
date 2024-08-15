@@ -14,13 +14,13 @@ const Glimpses2 = () => {
     return (
         <div className="glimpses-outer-container">
             <div className="glimpses-row row1">
-                <div className="glimpses-column  col1">
+                <div className="glimpses-column col1 hide-glimpses">
                     <img src={glimpse6} alt="glimpse1" />
                 </div>
                 <div className="glimpses-column col2">
                     <img src={glimpse2} alt="glimpse1" />
                 </div>
-                <div className="glimpses-column col1">
+                <div className="glimpses-column col1 glimpses-text">
                     <h1>MIX MEDIA</h1>
                     <p>
                         Acrylic with graphite, offering a dynamic fusion of
@@ -29,10 +29,10 @@ const Glimpses2 = () => {
                 </div>
             </div>
             <div className="glimpses-row row2">
-                <div className="glimpses-column col3">
+                <div className="glimpses-column col3 hide-glimpses">
                     <img src={glimpse5} alt="glimpse1" />
                 </div>
-                <div className="glimpses-column col1">
+                <div className="glimpses-column col1 glimpses-text">
                     <h1>TRADITIONAL ARTFORMS</h1>
                     <p>
                         Lippan art carries a rich cultural heritage and offer a
@@ -45,12 +45,12 @@ const Glimpses2 = () => {
             </div>
             <div className="glimpses-row row3">
                 <div className="glimpses-column col2">
-                    <img src={glimpse7} alt="glimpse1" />
-                </div>
-                <div className="glimpses-column col3">
                     <img src={glimpse1} alt="glimpse1" />
                 </div>
-                <div className="glimpses-column col1">
+                <div className="glimpses-column col3 hide-glimpses">
+                    <img src={glimpse7} alt="glimpse1" />
+                </div>
+                <div className="glimpses-column col1 glimpses-text">
                     <h1>NATURAL HUES</h1>
                     <p>
                         Adding a timeless and organic dimension to artworks,
@@ -60,10 +60,10 @@ const Glimpses2 = () => {
                 </div>
             </div>
             <div className="glimpses-row row4">
-                <div className="glimpses-column col2">
+                <div className="glimpses-column col2 hide-glimpses">
                     <img src={glimpse4} alt="glimpse1" />
                 </div>
-                <div className="glimpses-column col1">
+                <div className="glimpses-column col1 glimpses-text">
                     <h1>NATURAL HUES</h1>
                     <p>
                         Adding a timeless and organic dimension to artworks,
@@ -71,7 +71,7 @@ const Glimpses2 = () => {
                         world
                     </p>
                 </div>
-                <div className="glimpses-column col3">
+                <div className="glimpses-column col2 ">
                     <img src={glimpse8} alt="glimpse1" />
                 </div>
             </div>

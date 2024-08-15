@@ -20,13 +20,14 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 200px;
 }
 
 .whoweare-leftpart {
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 500px;
+    width: 30%;
 }
 
 .whoweare-leftpart p {
@@ -85,4 +86,23 @@
 .Webbtn:hover {
     color: var(--background-color);
     background-color: var(--text2-color);
+}
+
+@media (max-width: 1000px) {
+    .whoweare {
+        flex-direction: column;
+    }
+    .whoweare-leftpart {
+        width: 80%;
+    }
+    .homegrid {
+        margin-top: -10%;
+        width: 100%;
+    }
+    .browseartworks p {
+        width: 80%;
+    }
+    .browseartworks h1 {
+        font-size: 22px;
+    }
 }

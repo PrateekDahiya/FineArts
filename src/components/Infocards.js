@@ -200,13 +200,9 @@ const Infocards = () => {
                         <div className="infos">
                             <h2 className="infocard-name">{card.name}</h2>
                             <p className="infocard-position">{card.position}</p>
-                            <p className="infocard-contact">
-                                Contact: {card.contact}
-                            </p>
-                            <p className="infocard-email">
-                                Email: {card.email}
-                            </p>
-                            <p className="infocard-year">Year: {card.year}</p>
+                            <p className="infocard-contact">{card.contact}</p>
+                            <p className="infocard-email">{card.email}</p>
+                            <p className="infocard-year">{card.year}</p>
                         </div>
                     </div>
                 ))}

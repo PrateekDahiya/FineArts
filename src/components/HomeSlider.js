@@ -4,7 +4,7 @@ import "../styles/ImageSlider.css";
 const ImageSlider = () => {
     return (
         <div className="img-slider">
-            <span>Fine Arts</span>
+            <p>Fine Arts</p>
         </div>
     );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Sponsersgrid.css"; // Import the CSS file for styling
+import "../styles/Sponsersgrid.css";
 import img1 from "../assets/Sponsers/image1.png";
 import img2 from "../assets/Sponsers/image2.png";
 import img3 from "../assets/Sponsers/image3.png";
@@ -30,44 +30,49 @@ import img27 from "../assets/Sponsers/image27.png";
 import img28 from "../assets/Sponsers/image28.png";
 
 const sponsors = [
-    { name: "Sponsor1", image: img1, type: "Sponsor" },
-    { name: "Sponsor2", image: img2, type: "Sponsor" },
-    { name: "Sponsor3", image: img3, type: "Sponsor" },
-    { name: "Sponsor4", image: img4, type: "Sponsor" },
-    { name: "Sponsor5", image: img5, type: "Sponsor" },
-    { name: "Sponsor6", image: img6, type: "Sponsor" },
-    { name: "Sponsor7", image: img7, type: "Sponsor" },
-    { name: "Sponsor8", image: img8, type: "Sponsor" },
-    { name: "Sponsor9", image: img9, type: "Sponsor" },
-    { name: "Sponsor10", image: img10, type: "Sponsor" },
-    { name: "Sponsor11", image: img11, type: "Sponsor" },
-    { name: "Sponsor12", image: img12, type: "Sponsor" },
-    { name: "Sponsor13", image: img13, type: "Sponsor" },
-    { name: "Sponsor14", image: img14, type: "Sponsor" },
-    { name: "Sponsor15", image: img15, type: "Sponsor" },
-    { name: "Sponsor16", image: img16, type: "Sponsor" },
-    { name: "Sponsor17", image: img17, type: "Sponsor" },
-    { name: "Sponsor18", image: img18, type: "Sponsor" },
-    { name: "Sponsor19", image: img19, type: "Sponsor" },
-    { name: "Sponsor20", image: img20, type: "Sponsor" },
-    { name: "Sponsor21", image: img21, type: "Sponsor" },
+    { name: "Hero", image: img1, type: "Sponsor" },
+    { name: "Vodafone", image: img2, type: "Sponsor" },
+    { name: "Bisleri", image: img3, type: "Sponsor" },
+    { name: "Videocon", image: img4, type: "Sponsor" },
+    { name: "Nestle", image: img5, type: "Sponsor" },
+    { name: "Airtel", image: img6, type: "Sponsor" },
+    { name: "Vivo", image: img7, type: "Sponsor" },
+    { name: "Gionee", image: img8, type: "Sponsor" },
+    { name: "Denver", image: img9, type: "Sponsor" },
+    { name: "Indian Oil", image: img10, type: "Sponsor" },
+    { name: "NTPC", image: img11, type: "Sponsor" },
+    { name: "ISGEC", image: img12, type: "Sponsor" },
+    { name: "Umane Society", image: img13, type: "Sponsor" },
+    { name: "SBI", image: img14, type: "Sponsor" },
+    { name: "PNB", image: img15, type: "Sponsor" },
+    { name: "Axis Bank", image: img16, type: "Sponsor" },
+    { name: "Red Bull", image: img17, type: "Sponsor" },
+    { name: "Cavin Kare", image: img18, type: "Sponsor" },
+    { name: "Oppo", image: img19, type: "Sponsor" },
+    { name: "Coke Studio", image: img20, type: "Sponsor" },
+    { name: "Paytm", image: img21, type: "Sponsor" },
 ];
 
 const mediaPartners = [
-    { name: "MediaPartner1", image: img22, type: "Media Partner" },
-    { name: "MediaPartner2", image: img23, type: "Media Partner" },
-    { name: "MediaPartner3", image: img24, type: "Media Partner" },
-    { name: "MediaPartner4", image: img25, type: "Media Partner" },
-    { name: "MediaPartner5", image: img26, type: "Media Partner" },
-    { name: "MediaPartner6", image: img27, type: "Media Partner" },
-    { name: "MediaPartner7", image: img28, type: "Media Partner" },
+    { name: "Danik Bhaskar", image: img22, type: "Media Partner" },
+    { name: "Ajeet Samachar", image: img23, type: "Media Partner" },
+    { name: "Yash Babu", image: img24, type: "Media Partner" },
+    { name: "Jagat Jyanti", image: img25, type: "Media Partner" },
+    { name: "Amar Ujala", image: img26, type: "Media Partner" },
+    { name: "Aaj Smaj", image: img27, type: "Media Partner" },
+    { name: "Golden Kiran", image: img28, type: "Media Partner" },
 ];
 
 const Sponsorformat = ({ data }) => (
     <div className="sponsor-grid-container">
         {data.map((sponsor, index) => (
             <div key={index} className="sponsor-grid-item">
-                <img src={sponsor.image} alt={sponsor.name} draggable="false" />
+                <img
+                    src={sponsor.image}
+                    alt={sponsor.name}
+                    title={sponsor.name}
+                    draggable="false"
+                />
             </div>
         ))}
     </div>

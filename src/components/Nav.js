@@ -8,6 +8,7 @@ const Nav = () => {
     const locationHook = useLocation();
     const [tab, setTab] = useState("");
     const [page, setPage] = useState(locationHook.pathname);
+    const [showMenu, setShowMenu] = useState(false);
 
     useEffect(() => {
         const currentpage = locationHook.pathname;
@@ -28,60 +29,127 @@ const Nav = () => {
         }
     }, [page]);
 
-    return (
-        <div className="nav">
-            <a href="/">
-                <img src={FAlogo} className="logo" alt="FineArts" />
-            </a>
-            <div className="links-sec">
-                <Link
-                    to="/"
-                    className={`navlinks ${
-                        tab === "home" ? "active-navlink" : ""
-                    }`}
-                    onClick={() => {
-                        setTab("home");
-                    }}
-                >
-                    Home
-                </Link>
-                <Link
-                    to="/artworks"
-                    className={`navlinks ${
-                        tab === "artworks" ? "active-navlink" : ""
-                    }`}
-                    onClick={() => {
-                        setTab("artworks");
-                    }}
-                >
-                    Artworks
-                </Link>
-                <Link
-                    to="/confluence"
-                    className={`navlinks ${
-                        tab === "confluence" ? "active-navlink" : ""
-                    }`}
-                    onClick={() => {
-                        setTab("confluence");
-                    }}
-                >
-                    Confluence
-                </Link>
-                <Link
-                    to="/workshops"
-                    className={`navlinks ${
-                        tab === "workshops" ? "active-navlink" : ""
-                    }`}
-                    onClick={() => {
-                        setTab("workshops");
-                    }}
-                >
-                    Workshops
-                </Link>
-            </div>
+    const expandMenu = () => {
+        setShowMenu(true);
+    };
 
-            {/* <div className="links-sec"></div> */}
-        </div>
+    return (
+        <>
+            <div className="nav">
+                <a href="/">
+                    <img src={FAlogo} className="logo" alt="FineArts" />
+                </a>
+                {!showMenu ? (
+                    <button
+                        onClick={() => {
+                            expandMenu();
+                        }}
+                    >
+                        Menu
+                    </button>
+                ) : (
+                    <></>
+                )}
+                <div className="nav-wide">
+                    <div className="links-sec">
+                        <Link
+                            to="/"
+                            className={`navlinks ${
+                                tab === "home" ? "active-navlink" : ""
+                            }`}
+                            onClick={() => {
+                                setTab("home");
+                            }}
+                        >
+                            Home
+                        </Link>
+                        <Link
+                            to="/artworks"
+                            className={`navlinks ${
+                                tab === "artworks" ? "active-navlink" : ""
+                            }`}
+                            onClick={() => {
+                                setTab("artworks");
+                            }}
+                        >
+                            Artworks
+                        </Link>
+                        <Link
+                            to="/confluence"
+                            className={`navlinks ${
+                                tab === "confluence" ? "active-navlink" : ""
+                            }`}
+                            onClick={() => {
+                                setTab("confluence");
+                            }}
+                        >
+                            Confluence
+                        </Link>
+                        <Link
+                            to="/workshops"
+                            className={`navlinks ${
+                                tab === "workshops" ? "active-navlink" : ""
+                            }`}
+                            onClick={() => {
+                                setTab("workshops");
+                            }}
+                        >
+                            Workshops
+                        </Link>
+                    </div>
+                </div>
+            </div>
+            {showMenu ? (
+                <div className="nav-menu">
+                    <Link
+                        to="/"
+                        className={`navlinks ${
+                            tab === "home" ? "active-navlink" : ""
+                        }`}
+                        onClick={() => {
+                            setTab("home");
+                        }}
+                    >
+                        Home
+                    </Link>
+                    <Link
+                        to="/artworks"
+                        className={`navlinks ${
+                            tab === "artworks" ? "active-navlink" : ""
+                        }`}
+                        onClick={() => {
+                            setTab("artworks");
+                        }}
+                    >
+                        Artworks
+                    </Link>
+                    <Link
+                        to="/confluence"
+                        className={`navlinks ${
+                            tab === "confluence" ? "active-navlink" : ""
+                        }`}
+                        onClick={() => {
+                            setTab("confluence");
+                        }}
+                    >
+                        Confluence
+                    </Link>
+                    <Link
+                        to="/workshops"
+                        className={`navlinks ${
+                            tab === "workshops" ? "active-navlink" : ""
+                        }`}
+                        onClick={() => {
+                            setTab("workshops");
+                        }}
+                    >
+                        Workshops
+                    </Link>
+                </div>
+            ) : (
+                <></>
+            )}
+        </>
     );
 };
 

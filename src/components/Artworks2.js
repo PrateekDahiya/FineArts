@@ -868,6 +868,62 @@ const artworks = [
         type: "Backdrop",
         link: "https://www.instagram.com/fineartsclub.nitkkr/",
     },
+    {
+        src: `${process.env.PUBLIC_URL}/assets/Artworks/image83.jpg`,
+        alt: "@fineartsclub.nitkkr",
+        name: null,
+        description:
+            "This painting of an Eagle captures its sharp eyesight and majestic presence, as if it's gazing out at a stunning landscape or lost in deep thought. Its regal presence commands attention, in a calm and peaceful moment.",
+        artist: "@fineartsclub.nitkkr",
+        medium: null,
+        type: "Wall Painting",
+        link: "https://www.instagram.com/fineartsclub.nitkkr/",
+    },
+    {
+        src: `${process.env.PUBLIC_URL}/assets/Artworks/image84.jpg`,
+        alt: "@fineartsclub.nitkkr",
+        name: null,
+        description:
+            "This painting depicts a beautiful swan surrounded by bright red birds. The swan's blue feathers blend in with the background, looking like calm water. The red birds add a burst of color and energy, making the scene feel alive.",
+        artist: "@fineartsclub.nitkkr",
+        medium: null,
+        type: "Wall Painting",
+        link: "https://www.instagram.com/fineartsclub.nitkkr/",
+    },
+    {
+        src: `${process.env.PUBLIC_URL}/assets/Artworks/image85.jpg`,
+        alt: "@fineartsclub.nitkkr",
+        name: null,
+        description:
+            "In this painting, a sea turtle glides through a vibrant ocean, its blue shell a stunning contrast to the warm colors around it. The waves and seaweed seem to dance, yet the scene is incredibly serene - just like the underwater world.",
+        artist: "@fineartsclub.nitkkr",
+        medium: null,
+        type: "Wall Painting",
+        link: "https://www.instagram.com/fineartsclub.nitkkr/",
+    },
+    {
+        src: `${process.env.PUBLIC_URL}/assets/Artworks/image86.jpg`,
+        alt: "@fineartsclub.nitkkr",
+        name: "Citius",
+        description:
+            "Vibrant graffiti letters pop against a colorful background, celebrating CITIUS, the sports fest at NIT Kurukshetra, with infectious energy. A basketball player in motion adds to the excitement, capturing the thrill of competition.",
+        artist: "@fineartsclub.nitkkr",
+        medium: null,
+        type: "Wall Painting",
+        link: "https://www.instagram.com/fineartsclub.nitkkr/",
+    },
+
+    {
+        src: `${process.env.PUBLIC_URL}/assets/Artworks/image87.jpg`,
+        alt: "@fineartsclub.nitkkr",
+        name: null,
+        description:
+            "This painting captures a powerful moment of Luffy, his confident laugh echoing his unyielding spirit. His swirling hair adds to the dynamic energy, perfectly embodying the adventurous essence of the One Piece hero.",
+        artist: "@fineartsclub.nitkkr",
+        medium: null,
+        type: "Wall Painting",
+        link: "https://www.instagram.com/fineartsclub.nitkkr/",
+    },
 ];
 
 function shuffleArray(array) {
@@ -947,35 +1003,30 @@ const Artworks2 = () => {
                     onChange={(e) => setSearchTerm(e.target.value)}
                     placeholder="Search Artworks"
                 />
-                <label>
-                    Type:
-                    <select
-                        value={selectedType}
-                        onChange={(e) => setSelectedType(e.target.value)}
-                    >
-                        <option value="">All</option>
-                        {types.map((type, index) => (
-                            <option key={index} value={type}>
-                                {type}
-                            </option>
-                        ))}
-                    </select>
-                </label>
-                <label htmlFor="medium-select">
-                    Medium
-                    <select
-                        value={selectedMedium}
-                        id="medium-select"
-                        onChange={(e) => setSelectedMedium(e.target.value)}
-                    >
-                        <option value="">All</option>
-                        {mediums.map((medium, index) => (
-                            <option key={index} value={medium}>
-                                {medium}
-                            </option>
-                        ))}
-                    </select>
-                </label>
+                <select
+                    value={selectedType}
+                    onChange={(e) => setSelectedType(e.target.value)}
+                    id="type-select"
+                >
+                    <option value="">Select Type</option>
+                    {types.map((type, index) => (
+                        <option key={index} value={type}>
+                            {type}
+                        </option>
+                    ))}
+                </select>
+                <select
+                    value={selectedMedium}
+                    id="medium-select"
+                    onChange={(e) => setSelectedMedium(e.target.value)}
+                >
+                    <option value="">Select Medium</option>
+                    {mediums.map((medium, index) => (
+                        <option key={index} value={medium}>
+                            {medium}
+                        </option>
+                    ))}
+                </select>
             </div>
             <div className="gallery">
                 {filteredArtworks.map((artwork, index) => (
@@ -1028,6 +1079,7 @@ const Artworks2 = () => {
                                 <a
                                     href={filteredArtworks[currentImage].link}
                                     className="artist-link"
+                                    target="_blank"
                                 >
                                     <strong>Artist:</strong>
                                     {filteredArtworks[currentImage].artist}
