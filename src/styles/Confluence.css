@@ -63,10 +63,12 @@
     justify-content: center;
     cursor: pointer;
     overflow: hidden;
+    transition: transform 0.3s ease-in-out;
 }
 
 .conflue-boxes:hover {
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
 }
 
 .overlay2 {

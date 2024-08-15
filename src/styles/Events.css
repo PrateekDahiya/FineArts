@@ -23,11 +23,16 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    object-fit: cover;
+    transition: transform 1s ease-in-out;
+}
+.event:hover {
+    transform: scale(1.1);
 }
 
 .event img {
     width: 100%;
-    max-height: 45vh;
+    height: 45vh;
     display: block;
 }
 
@@ -58,4 +63,11 @@
 
 .description p {
     margin-bottom: 0;
+}
+
+@media (max-width: 574px) {
+    .grid {
+        margin-top: 5vh;
+        grid-template-columns: repeat(1, minmax(30vw, 1fr));
+    }
 }
