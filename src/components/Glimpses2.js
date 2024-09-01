@@ -51,11 +51,10 @@ const Glimpses2 = () => {
                     <img src={glimpse7} alt="glimpse1" />
                 </div>
                 <div className="glimpses-column col1 glimpses-text">
-                    <h1>NATURAL HUES</h1>
+                    <h1>MANDALA MAGIC</h1>
                     <p>
-                        Adding a timeless and organic dimension to artworks,
-                        infusing them with the beauty and serenity of natural
-                        world
+                        Intricate mandala designs, offering balance, harmony,
+                        and spiritual connection.
                     </p>
                 </div>
             </div>

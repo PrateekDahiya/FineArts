@@ -105,7 +105,7 @@ const Slider = () => {
                             className="d-block w-100"
                             alt={slide.alt}
                         />
-                        <div className="carousel-caption d-none d-md-block">
+                        <div className="carousel-caption d-md-block">
                             <h5>{slide.title}</h5>
                             <p>{slide.description}</p>
                             {slide.link && (

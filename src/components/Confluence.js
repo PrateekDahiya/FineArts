@@ -19,7 +19,7 @@ const boxes = [
         src: img3,
         alt: "Art Gallery",
         title: "Art Gallery",
-        link: "/artworks?type=Art Gallery",
+        link: "/artgallery",
     },
 ];
 
@@ -28,9 +28,9 @@ const Confluence = () => {
     const handleHover = () => {
         setIshovered(true);
     };
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    // useEffect(() => {
+    //     window.scrollTo(0, 0);
+    // }, []);
 
     return (
         <div className="confluence-page">
@@ -40,12 +40,14 @@ const Confluence = () => {
             <div className="abtconflu">
                 <h1>ABOUT CONFLUENCE</h1>
                 <p>
-                    Laboris exercitation reprehenderit ipsum veniam tempor
-                    pariatur excepteur elit et aliquip nulla pariatur proident.
-                    Cupidatat commodo commodo nisi irure excepteur incididunt
-                    aliquip tempor non sunt in velit ea. Laborum aliqua qui
-                    labore aliqua nostrud elit elit dolore. Mollit sit sit
-                    tempor magna.
+                    Confluence is the annual cultural festival of NIT
+                    Kurukshetra, and it is one of the most awaited cultural
+                    festivals in India. It is a cultural extravaganza beyond
+                    words, beyond description. Confluence is the coming together
+                    of free spirits, like-minded zealous youth and a celebration
+                    of culture of true artistic genius. Its urge to deliver the
+                    maximum is what makes it one of the most awaited cultural
+                    festival.
                 </p>
             </div>
             <div className="conflue-items">
@@ -69,18 +71,18 @@ const Confluence = () => {
                     <div className="conflue-part-content event-content">
                         <h1>Events</h1>
                         <p>
-                            Non deserunt dolor occaecat amet in anim irure
-                            officia veniam consectetur ut. Aliqua Lorem ad non
-                            duis. Duis ad pariatur nulla reprehenderit proident
-                            cupidatat ut dolor do occaecat eiusmod. Qui velit
-                            officia voluptate amet ipsum ullamco sunt ullamco
-                            sint aliquip ex. Tempor ullamco incididunt
-                            consectetur id labore irure. Sit velit elit proident
-                            enim Lorem eu non cillum voluptate quis magna. Nulla
-                            quis ut occaecat ut enim eu labore non aliquip
-                            laborum qui officia. Exercitation nulla qui aute
-                            aliqua dolore officia tempor dolor. Amet non ad
-                            aliquip velit.
+                            Our Fine Arts events showcase a variety of artistic
+                            expressions, from face painting and comic strip
+                            creation to abstract painting and clay modeling.
+                            Each event is designed to inspire creativity and
+                            innovation, allowing participants to explore
+                            different mediums and techniques. With activities
+                            like live sketching, tattoo making, and
+                            waste-to-wonder creations, attendees can discover
+                            new ways to express themselves artistically. These
+                            events provide a vibrant platform for both seasoned
+                            artists and beginners to showcase their talents and
+                            connect with a community of art enthusiasts.
                         </p>
                         <Link to="/events" className="Webbtn">
                             Events
@@ -97,20 +99,16 @@ const Confluence = () => {
                     <div className="conflue-part-content backdrop-content">
                         <h1>Backdrop</h1>
                         <p>
-                            Non deserunt dolor occaecat amet in anim irure
-                            officia veniam consectetur ut. Aliqua Lorem ad non
-                            duis. Duis ad pariatur nulla reprehenderit proident
-                            cupidatat ut dolor do occaecat eiusmod. Qui velit
-                            officia voluptate amet ipsum ullamco sunt ullamco
-                            sint aliquip ex. Tempor ullamco incididunt
-                            consectetur id labore irure. Sit velit elit proident
-                            enim Lorem eu non cillum voluptate quis magna. Nulla
-                            quis ut occaecat ut enim eu labore non aliquip
-                            laborum qui officia. Exercitation nulla qui aute
-                            aliqua dolore officia tempor dolor. Amet non ad
-                            aliquip velit.
+                            Every year, during the much-anticipated Confluence,
+                            the annual cultural fest at NIT Kurukshetra, the
+                            dedicated members of the Fine Arts and Modelling
+                            Club embark on a month-long project to create a
+                            massive canvas painting that will adorn the backdrop
+                            of the Open-Air Theatre, leaving a lasting
+                            impression on all who attend the fest. This truly
+                            showcases the commitment of the club members.
                         </p>
-                        <Link to="/artworks?type=backdrop" className="Webbtn">
+                        <Link to="/artworks?type=Backdrop" className="Webbtn">
                             Backdrop
                         </Link>
                     </div>
@@ -119,23 +117,17 @@ const Confluence = () => {
                     <div className="conflue-part-content art-gallery-content">
                         <h1>Art Gallery</h1>
                         <p>
-                            Non deserunt dolor occaecat amet in anim irure
-                            officia veniam consectetur ut. Aliqua Lorem ad non
-                            duis. Duis ad pariatur nulla reprehenderit proident
-                            cupidatat ut dolor do occaecat eiusmod. Qui velit
-                            officia voluptate amet ipsum ullamco sunt ullamco
-                            sint aliquip ex. Tempor ullamco incididunt
-                            consectetur id labore irure. Sit velit elit proident
-                            enim Lorem eu non cillum voluptate quis magna. Nulla
-                            quis ut occaecat ut enim eu labore non aliquip
-                            laborum qui officia. Exercitation nulla qui aute
-                            aliqua dolore officia tempor dolor. Amet non ad
-                            aliquip velit.
+                            We organize an exciting art exhibition where
+                            students, and even people from outside our college,
+                            can showcase their creative talents. During
+                            Confluence, our college fest, the art gallery
+                            becomes a popular spot. Even the faculty members
+                            visit it with great interest. It's a fantastic
+                            chance for artists to display their work, not just
+                            to fellow students but also to our supportive and
+                            enthusiastic teachers.
                         </p>
-                        <Link
-                            to="/artworks?type=Art Gallery"
-                            className="Webbtn"
-                        >
+                        <Link to="/artgallery" className="Webbtn">
                             Art Gallery
                         </Link>
                     </div>
@@ -144,7 +136,7 @@ const Confluence = () => {
                     </div>
                 </div>
             </div>
-            <div className="sponsers">
+            <div className="sponsers" id="Sponsors">
                 <Sponsersgrid />
             </div>
         </div>

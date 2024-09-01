@@ -2,6 +2,7 @@
 
 * {
     font-family: "Anek Devanagari", sans-serif;
+    user-select: none;
 }
 
 body {

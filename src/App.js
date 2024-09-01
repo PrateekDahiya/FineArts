@@ -7,6 +7,7 @@ import Artworks2 from "./components/Artworks2.js";
 import Footer from "./components/Footer.js";
 import Events from "./components/Events.js";
 import Workshops from "./components/Workshops.js";
+import Artgallery from "./components/Artgallery.js";
 import "./styles/App.css";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                         <Route path="/confluence" element={<Confluence />} />
                         <Route path="/events" element={<Events />} />
                         <Route path="/workshops" element={<Workshops />} />
+                        <Route path="/artgallery" element={<Artgallery />} />
                     </Routes>
                     <div className="footer">
                         <Footer />

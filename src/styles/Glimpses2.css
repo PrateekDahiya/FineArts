@@ -54,7 +54,7 @@
 }
 
 .glimpses-text h1 {
-    font-size: 30px;
+    font-size: 25px;
     transition: transform 0.3s ease;
 }
 
@@ -70,7 +70,6 @@
 
 .glimpses-text p:hover {
     transform: scale(1.05);
-    color: var(--text-color);
 }
 
 @media (max-width: 1080px) {
@@ -82,5 +81,15 @@
 @media (max-width: 650px) {
     .hide-glimpses {
         display: none;
+    }
+    .glimpses-text h1 {
+        font-size: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .glimpses-text p {
+        font-size: 14px;
+        color: var(--text2-color);
+        transition: transform 0.3s ease;
     }
 }

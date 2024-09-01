@@ -48,3 +48,9 @@
     object-fit: cover;
     transform: rotate(45deg);
 }
+
+@media (max-width: 1000px) {
+    .grid-item {
+        border: 1px solid var(--text-color);
+    }
+}

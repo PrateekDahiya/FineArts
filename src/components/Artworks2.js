@@ -976,7 +976,7 @@ const Artworks2 = () => {
     const mediums = [
         ...new Set(artworks.map((artwork) => artwork.medium).filter(Boolean)),
     ];
-    const types = ["Artwork", "Backdrop", "Art Gallery", "Wall Painting"];
+    const types = ["Artwork", "Backdrop", "Wall Painting"];
 
     // Memoized shuffled artworks
     const shuffledArtworks = useMemo(() => shuffleArray(artworks), [artworks]);
@@ -1062,13 +1062,17 @@ const Artworks2 = () => {
 
             {modalOpen && (
                 <div id="myModal" className="modal">
-                    <span className="close" onClick={closeModal}>
-                        &times;
-                    </span>
+                    <img
+                        className="close"
+                        onClick={closeModal}
+                        src="https://cdn-icons-png.flaticon.com/128/594/594332.png"
+                    />
                     <div className="modal-navigation">
-                        <div className="prev" onClick={prevImage}>
-                            &lt;
-                        </div>
+                        <img
+                            className="prev"
+                            onClick={prevImage}
+                            src="https://cdn-icons-png.flaticon.com/128/8213/8213500.png"
+                        />
                         <div className="modal-image">
                             <img
                                 className="modal-content"
@@ -1093,10 +1097,11 @@ const Artworks2 = () => {
                                 ) : null}
                             </p>
                         </div>
-
-                        <div className="next" onClick={nextImage}>
-                            &gt;
-                        </div>
+                        <img
+                            className="next"
+                            onClick={nextImage}
+                            src="https://cdn-icons-png.flaticon.com/128/8213/8213522.png"
+                        />
                     </div>
                 </div>
             )}

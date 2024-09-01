@@ -7,8 +7,6 @@ const infocardData = [
             "https://res.cloudinary.com/drnrsxnx9/image/upload/v1720876178/FineArts/tmp-1-1720876148596_kzhqmz.jpg",
         name: "Priyanka",
         position: "Secretary",
-        contact: "1234567890",
-        email: "email1@gmail.com",
         year: 2021,
     },
     {
@@ -16,8 +14,6 @@ const infocardData = [
             "https://res.cloudinary.com/drnrsxnx9/image/upload/v1720876304/FineArts/tmp-1-1720876274548_kcgwvu.jpg",
         name: "Rachit",
         position: "Secretary",
-        contact: "1234567890",
-        email: "email1@gmail.com",
         year: 2021,
     },
     {
@@ -25,8 +21,6 @@ const infocardData = [
             "https://res.cloudinary.com/drnrsxnx9/image/upload/v1720876351/FineArts/tmp-2-1720876319860_ptwwiv.jpg",
         name: "Sparsh",
         position: "Secretary",
-        contact: "1234567890",
-        email: "email1@gmail.com",
         year: 2021,
     },
     {
@@ -34,8 +28,6 @@ const infocardData = [
             "https://res.cloudinary.com/drnrsxnx9/image/upload/v1720876385/FineArts/tmp-3-1720876356339_agib7d.jpg",
         name: "Yash Mittal",
         position: "Secretary",
-        contact: "1234567890",
-        email: "email1@gmail.com",
         year: 2021,
     },
     {
@@ -43,8 +35,6 @@ const infocardData = [
             "https://res.cloudinary.com/drnrsxnx9/image/upload/v1720880716/FineArts/tmp-4-1720880681020_qjauyc.jpg",
         name: "Chetan Verma",
         position: "Secretary",
-        contact: "1234567890",
-        email: "email1@gmail.com",
         year: 2022,
     },
     {
@@ -52,8 +42,6 @@ const infocardData = [
             "https://res.cloudinary.com/drnrsxnx9/image/upload/v1720881057/FineArts/tmp-5-1720881025242_p38mmf.jpg",
         name: "Gourav Saini",
         position: "Secretary",
-        contact: "1234567890",
-        email: "email1@gmail.com",
         year: 2022,
     },
     {
@@ -61,8 +49,6 @@ const infocardData = [
             "https://res.cloudinary.com/drnrsxnx9/image/upload/v1720881111/FineArts/tmp-6-1720881080114_awdzna.jpg",
         name: "Harshit Azad",
         position: "Secretary",
-        contact: "1234567890",
-        email: "email1@gmail.com",
         year: 2022,
     },
     {
@@ -70,8 +56,6 @@ const infocardData = [
             "https://res.cloudinary.com/drnrsxnx9/image/upload/v1720881173/FineArts/tmp-7-1720881141281_unitxo.jpg",
         name: "Radhika Chaudhari",
         position: "Secretary",
-        contact: "1234567890",
-        email: "email1@gmail.com",
         year: 2022,
     },
     {
@@ -79,8 +63,6 @@ const infocardData = [
             "https://res.cloudinary.com/drnrsxnx9/image/upload/v1720881833/FineArts/tmp-8-1720881801842_wxvy1r.jpg",
         name: "Bharat",
         position: "Secretary",
-        contact: "1234567890",
-        email: "email1@gmail.com",
         year: 2023,
     },
     {
@@ -88,8 +70,6 @@ const infocardData = [
             "https://res.cloudinary.com/drnrsxnx9/image/upload/v1720881894/FineArts/tmp-9-1720881864257_l84wzj.jpg",
         name: "Muskan",
         position: "Secretary",
-        contact: "1234567890",
-        email: "email1@gmail.com",
         year: 2023,
     },
     {
@@ -97,8 +77,6 @@ const infocardData = [
             "https://res.cloudinary.com/drnrsxnx9/image/upload/v1720881955/FineArts/tmp-10-1720881918632_uhhm2d.png",
         name: "Naved Ali",
         position: "Secretary",
-        contact: "1234567890",
-        email: "email1@gmail.com",
         year: 2023,
     },
     {
@@ -106,8 +84,6 @@ const infocardData = [
             "https://res.cloudinary.com/drnrsxnx9/image/upload/v1720881994/FineArts/tmp-11-1720881964232_i3ja07.jpg",
         name: "Yashwant Raj",
         position: "Secretary",
-        contact: "1234567890",
-        email: "email1@gmail.com",
         year: 2023,
     },
     {
@@ -115,8 +91,8 @@ const infocardData = [
             "https://res.cloudinary.com/drnrsxnx9/image/upload/v1720882344/FineArts/tmp-12-1720882310237_kebuec.jpg",
         name: "Adarsh Mishra",
         position: "Secretary",
-        contact: "1234567890",
-        email: "email1@gmail.com",
+        contact: "+91 8707650472",
+        email: "12111115@nitkkr.ac.in",
         year: 2024,
     },
     {
@@ -124,8 +100,8 @@ const infocardData = [
             "https://res.cloudinary.com/drnrsxnx9/image/upload/v1720882627/FineArts/tmp-13-1720882595443_g1raux.jpg",
         name: "Gaurav Saini",
         position: "Secretary",
-        contact: "1234567890",
-        email: "email1@gmail.com",
+        contact: "+91 8295739907",
+        email: "12115114@nitkkr.ac.in",
         year: 2024,
     },
     {
@@ -133,8 +109,8 @@ const infocardData = [
             "https://res.cloudinary.com/drnrsxnx9/image/upload/v1720882700/FineArts/tmp-14-1720882669539_xuk97b.jpg",
         name: "Sakshi Saxena",
         position: "Secretary",
-        contact: "1234567890",
-        email: "email1@gmail.com",
+        contact: "+91 9140536796",
+        email: "12115073@nitkkr.ac.in",
         year: 2024,
     },
     {
@@ -142,8 +118,8 @@ const infocardData = [
             "https://res.cloudinary.com/drnrsxnx9/image/upload/v1720882851/FineArts/tmp-15-1720882820366_rtm8ye.jpg",
         name: "Dhanush Rathod",
         position: "Secretary",
-        contact: "1234567890",
-        email: "email1@gmail.com",
+        contact: "+91 8522857065",
+        email: "12116149@nitkkr.ac.in",
         year: 2024,
     },
 ];

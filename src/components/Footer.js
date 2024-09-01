@@ -19,16 +19,22 @@ const Footer = () => {
                         various forms of art and craft.
                     </p>
                     <div className="social-media">
-                        <a href="#">
+                        <a
+                            href="https://www.facebook.com/faclubnitk"
+                            target="_blank"
+                        >
                             <i className="bx bxl-facebook-square"></i>
                         </a>
-                        <a href="#">
+                        <a
+                            href="https://www.instagram.com/fineartsclub.nitkkr/"
+                            target="_blank"
+                        >
                             <i className="bx bxl-instagram-alt"></i>
                         </a>
-                        <a href="#">
-                            <i className="bx bxl-youtube"></i>
-                        </a>
-                        <a href="#">
+                        <a
+                            href="https://www.linkedin.com/company/fine-arts-modelling-club/"
+                            target="_blank"
+                        >
                             <i className="bx bxl-linkedin-square"></i>
                         </a>
                     </div>
